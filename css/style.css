@@ -1,0 +1,14 @@
+  body{
+    background: url(images/loginpg.jpg) no-repeat center fixed; 
+    background-size: cover;
+    /*
+      margin:0;
+            padding:0;
+            overflow:scroll;*/
+            
+    
+  }
+
+  body>.container-fluid{
+  	background: none;
+  }

@@ -1,0 +1,54 @@
+{
+  "status": true,
+  "message": "Dealer based Employee List Exists",
+  "DealerEmployeeList": [
+    {
+      "employeeid": "1",
+      "name": "ESAKKI",
+      "dob": "31-12-2100",
+      "mobileno": "979797997"
+    },
+    {
+      "employeeid": "2",
+      "name": "VEERA",
+      "dob": "31-12-2100",
+      "mobileno": "676799797"
+    },
+    {
+      "employeeid": "3",
+      "name": "NEW",
+      "dob": "31-12-2100",
+      "mobileno": "949797998"
+    },
+    {
+      "employeeid": "4",
+      "name": "QWERTY",
+      "dob": "11-11-1988",
+      "mobileno": "9595995959"
+    },
+    {
+      "employeeid": "6",
+      "name": "TTT",
+      "dob": "26-10-1947",
+      "mobileno": "58888"
+    },
+    {
+      "employeeid": "7",
+      "name": "GLTORIEIEIE",
+      "dob": "11-11-1896",
+      "mobileno": "6656767676"
+    },
+    {
+      "employeeid": "8",
+      "name": "TEST TSST TEST",
+      "dob": "11-11-1948",
+      "mobileno": "7744062219"
+    },
+    {
+      "employeeid": "9",
+      "name": "TEST TSST TEST",
+      "dob": "11-11-1988",
+      "mobileno": "9944062218"
+    }
+  ]
+}

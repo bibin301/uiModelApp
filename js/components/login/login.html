@@ -1,0 +1,46 @@
+<style>
+  .login-container {
+    position: absolute;
+    left: 37%;
+    top: 30%;
+   
+    width: 30%;
+  }
+  .button-submit{
+    position: relative;
+    left: 40%;
+  }
+  .has-err{
+    top: 183px;
+    left: 149px;
+    color: red;
+    text-align: center;
+    position: absolute;
+  
+  }
+  
+</style>
+
+
+<div class="panel panel-default col-sm-4 login-container">
+  <div class="panel-body">
+    <form name="userForm" novaidate="">
+    <h4 class="text-center">Login </h4>
+    <div class="form-group">
+      <label for="exampleInputEmail1">UserCode</label>
+      <input type="text" class="form-control" id="exampleInputEmail1" ng-model="user.name" placeholder="UserName">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" ng-model="user.pass" id="exampleInputPassword1" placeholder="Password">
+    </div>
+<P class="has-err">{{errorMessage}}</P>
+    <button type="submit" class="btn btn-primary button-submit" ng-click="submit(user)">Submit</button>
+  </form>
+  <div class="clearfix"> </div>
+  <!-- <b>note <b> temp :un:007 and pw 1234 -->
+  </div>
+</div>
+
+
