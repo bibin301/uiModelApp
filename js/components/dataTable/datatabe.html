@@ -1,0 +1,77 @@
+
+<style>
+#custom_table#custom_table#custom_table{
+    table-layout: fixed;
+    width: 100%;
+}
+table#custom_table th,table#custom_table td {
+    word-wrap: break-word;
+}
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+    /* Force table to not be like tables anymore */
+    table#custom_table, #custom_table thead, #custom_table tbody, #custom_table th, #custom_table td, #custom_table tr {
+        display: block;
+    }
+    /* Hide table headers (but not display: none;, for accessibility) */
+    #custom_table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    #custom_table tr {
+        border: 1px solid #ccc;
+    }
+    #custom_table td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+    }
+    #custom_table td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+}
+
+td div.inner-div{
+    text-overflow: ellipsis !important;
+    white-space: nowrap;
+    width: 100px;
+    height: 35px;
+    overflow: hidden;
+    -moz-text-overflow: ellipsis;
+}
+.actionTd.actionTd.actionTd{
+    overflow: visible !important;
+}
+</style>
+
+<h2> table </h2>
+<div class="table-responsive um-table" style="overflow-x:auto ">
+                 <table class="display table table-bordered table-striped " datatable="ng " id="dynamic-table custom_table ">
+                   <thead>
+
+                       <tr>
+                         <th>Name</th>
+                         <th>Population</th>
+<td> Action</td>
+
+                       </tr>
+
+                   </thead>
+                   <tbody>
+                     <tr ng-repeat="list in data">
+                     <td>{{list.name}} </td>
+                     <td>{{list.population}} </td>
+                     <td ng-click="getListDetials(list)"> click</td>
+
+                     </tr>
+                   </tbody>
+                 </table>
+               </div>

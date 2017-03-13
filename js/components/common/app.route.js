@@ -25,6 +25,10 @@
       url: '/list',
       templateUrl: "js/components/list/list.html",
       controller: 'listCtl',
+    }).state('dashboard.dataTable',{
+      url:'/dataTable',
+      templateUrl:"js/components/dataTable/datatabe.html",
+      controller:"tableCtl"
     });
   }
 
