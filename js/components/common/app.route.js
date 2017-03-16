@@ -29,6 +29,10 @@
       url:'/dataTable',
       templateUrl:"js/components/dataTable/datatabe.html",
       controller:"tableCtl"
+    }).state('dashboard.menubar',{
+      url:'/menubar',
+      templateUrl:"js/components/menubar/menubar.html",
+      controller:"menuCtl"
     });
   }
 
