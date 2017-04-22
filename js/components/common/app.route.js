@@ -33,7 +33,25 @@
       url:'/menubar',
       templateUrl:"js/components/menubar/menubar.html",
       controller:"menuCtl"
-    });
+    }).state('dashboard.tab',{
+      url:"/tab",
+      templateUrl:"js/components/tab/tab.html"
+    }).state('dashboard.tab.profile',{
+      url:"/profile",
+      templateUrl:"js/components/tab/profile.html"
+    }).state('dashboard.tab.kyc',{
+      url:"/kyc",
+      templateUrl:"js/components/tab/kyc.html"
+
+    }).state('dashboard.tab.password',{
+      url:"/password",
+      templateUrl:"js/components/tab/password.html"
+    })
+    .state('dashboard.wizard',{
+      url:"/wizard",
+      templateUrl:"js/components/wizard/wizard.html",
+      controller:"wizardCtl"
+    })
   }
 
 })();
