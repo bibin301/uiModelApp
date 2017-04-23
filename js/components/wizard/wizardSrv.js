@@ -20,6 +20,15 @@
 
         });
 
+      },
+      getList1: function(usrData) {
+        return $http({
+           //url: 'mobileapp.constient.com/bharathtemp/dealerCodeEmployeeList.php',
+          url: 'js/components/wizard/data.json',
+          method: "get",
+
+        });
+
       }
 
 

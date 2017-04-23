@@ -25,7 +25,30 @@ Srv.getList().success(function(data){
   var chart = new Highcharts.Chart({
 
       chart: {
-          renderTo: 'container',
+          renderTo: 'container1',
+          type: 'pie'
+      },
+
+      series: [{
+          data: data
+      }]
+
+  });
+
+})
+Srv.getList1().success(function(data){
+
+
+  // Highcharts requires the y option to be set
+  $.each(data, function (i, point) {
+      point.y = point.data;
+  });
+
+
+  var chart = new Highcharts.Chart({
+
+      chart: {
+          renderTo: 'container2',
           type: 'pie'
       },
 
